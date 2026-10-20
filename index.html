@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>The Xclusive Beauty Bar | Concept Preview</title>
+<meta name="description" content="Concept preview of a one-page site for The Xclusive Beauty Bar.">
+<style>
+:root{
+  --ink:#2b1520;
+  --plum:#4e1a37;
+  --plum-deep:#38102a;
+  --blush:#f8ece8;
+  --cream:#fdf8f5;
+  --rose:#c98a8f;
+  --gold:#e3c48a;
+  --muted:#6b4b58;
+  --serif:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--cream);line-height:1.6;font-size:1.0625rem;-webkit-text-size-adjust:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+.notice{background:#111;color:#fff;text-align:center;font-size:.8125rem;line-height:1.4;padding:.6rem 1rem;font-weight:600}
+
+.wrap{width:100%;max-width:68rem;margin:0 auto;padding:0 1.25rem}
+
+header.top{background:var(--plum-deep);color:var(--blush)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-top:1rem;padding-bottom:1rem}
+.brand{font-family:var(--serif);font-size:1.0625rem;letter-spacing:.04em;text-decoration:none}
+.top-call{font-weight:600;font-size:.9375rem;text-decoration:none;border:1px solid var(--gold);color:var(--gold);padding:.45rem .9rem;border-radius:999px}
+.top-call:hover{background:var(--gold);color:var(--plum-deep)}
+
+.hero{background:linear-gradient(160deg,var(--plum) 0%,var(--plum-deep) 100%);color:var(--blush);position:relative;overflow:hidden}
+.hero .wrap{position:relative;padding-top:3.5rem;padding-bottom:4.5rem;z-index:1}
+.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;pointer-events:none}
+.hero::before{width:22rem;height:22rem;right:-9rem;top:-6rem;border:1px solid rgba(227,196,138,.45)}
+.hero::after{width:15rem;height:15rem;right:-3rem;bottom:-7rem;background:rgba(201,138,143,.22)}
+.eyebrow{font-size:.8125rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:1rem}
+h1{font-family:var(--serif);font-weight:400;font-size:2.6rem;line-height:1.08;letter-spacing:-.01em;margin-bottom:1.1rem}
+h1 em{font-style:italic;color:var(--gold)}
+.lead{max-width:30rem;font-size:1.125rem;color:#f1dfe0;margin-bottom:2rem}
+.actions{display:flex;flex-wrap:wrap;gap:.75rem}
+.btn{display:inline-block;text-decoration:none;font-weight:700;padding:.95rem 1.5rem;border-radius:999px;font-size:1rem;text-align:center;min-height:48px}
+.btn-primary{background:var(--gold);color:var(--plum-deep)}
+.btn-primary:hover{background:#f0d6a2}
+.btn-ghost{border:1.5px solid var(--blush);color:var(--blush)}
+.btn-ghost:hover{background:var(--blush);color:var(--plum-deep)}
+
+section{padding:3.5rem 0}
+h2{font-family:var(--serif);font-weight:400;font-size:1.9rem;line-height:1.15;margin-bottom:1rem;color:var(--plum)}
+.kicker{font-size:.8125rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:.6rem}
+
+.about{background:var(--cream)}
+.about p{max-width:36rem;color:#3d2630}
+.about .grid{display:grid;gap:2rem}
+.mark{display:none}
+
+.visit{background:var(--blush)}
+.cards{display:grid;gap:1rem;margin-top:1.5rem}
+.card{background:#fff;border:1px solid #ecd5d2;border-radius:1rem;padding:1.5rem}
+.card h3{font-family:var(--serif);font-weight:400;font-size:1.25rem;color:var(--plum);margin-bottom:.4rem}
+.card p{color:#3d2630;margin-bottom:.9rem}
+.card a.link{font-weight:700;color:var(--plum);text-decoration-thickness:2px;text-underline-offset:4px;overflow-wrap:anywhere}
+.card a.link:hover{color:#8a2d5c}
+
+footer{background:var(--plum-deep);color:#e9d3d6;padding:2.25rem 0;font-size:.9375rem}
+footer .wrap{display:grid;gap:.6rem}
+footer .name{font-family:var(--serif);font-size:1.15rem;color:var(--blush)}
+footer a{color:var(--gold);overflow-wrap:anywhere}
+
+@media (min-width:48rem){
+  body{font-size:1.125rem}
+  .wrap{padding:0 2rem}
+  h1{font-size:4rem}
+  h2{font-size:2.4rem}
+  .hero .wrap{padding-top:6rem;padding-bottom:7rem}
+  .hero::before{width:40rem;height:40rem;right:-10rem;top:-12rem}
+  .hero::after{width:24rem;height:24rem;right:6rem;bottom:-12rem}
+  section{padding:5.5rem 0}
+  .about .grid{grid-template-columns:1.3fr 1fr;align-items:center;gap:4rem}
+  .mark{display:flex;align-items:center;justify-content:center;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 30% 30%,var(--rose),var(--plum));color:var(--blush);font-family:var(--serif);font-size:7rem;font-style:italic;box-shadow:0 0 0 12px var(--blush),0 0 0 13px var(--rose);max-width:20rem;width:100%;margin:0 auto}
+  .cards{grid-template-columns:1fr 1fr;gap:1.5rem}
+  .card{padding:2rem}
+  footer .wrap{grid-template-columns:1fr auto;align-items:center}
+}
+@media (min-width:75rem){
+  h1{font-size:4.75rem}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<div class="notice" role="note">Concept preview made by Purcell Ventures for The Xclusive Beauty Bar. Not the official site.</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">The Xclusive Beauty Bar</a>
+    <a class="top-call" href="tel:+12053932214">Call +1 205 393 2214</a>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Beauty bar</p>
+      <h1>The <em>Xclusive</em> Beauty Bar</h1>
+      <p class="lead">A local beauty bar. Call or send an email to get in touch with us.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="tel:+12053932214">Call +1 205 393 2214</a>
+        <a class="btn btn-ghost" href="mailto:Thexclusivebeautybar@gmail.com">Send an email</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="about" aria-labelledby="about-h">
+    <div class="wrap grid">
+      <div>
+        <p class="kicker">What we are</p>
+        <h2 id="about-h">A beauty bar you can reach directly</h2>
+        <p>The Xclusive Beauty Bar is a local beauty business. To ask what we offer, or to ask about booking, call or write to us. You will reach the team directly.</p>
+      </div>
+      <div class="mark" aria-hidden="true">X</div>
+    </div>
+  </section>
+
+  <section class="visit" id="contact" aria-labelledby="contact-h">
+    <div class="wrap">
+      <p class="kicker">Get in touch</p>
+      <h2 id="contact-h">Call or write to us</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Phone</h3>
+          <p>The quickest way to reach us.</p>
+          <a class="link" href="tel:+12053932214">+1 205 393 2214</a>
+        </div>
+        <div class="card">
+          <h3>Email</h3>
+          <p>Send a message and we will reply.</p>
+          <a class="link" href="mailto:Thexclusivebeautybar@gmail.com">Thexclusivebeautybar@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <p class="name">The Xclusive Beauty Bar</p>
+      <p><a href="tel:+12053932214">+1 205 393 2214</a> &middot; <a href="mailto:Thexclusivebeautybar@gmail.com">Thexclusivebeautybar@gmail.com</a></p>
+    </div>
+    <p>Concept preview by Purcell Ventures.</p>
+  </div>
+</footer>
+
+</body>
+</html>
